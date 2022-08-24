@@ -1,4 +1,4 @@
-  /*global rule*/ 
+   /*global rule*/ 
  * {   box-sizing: border-box;
     margin:0;
     padding:0;  }
@@ -43,7 +43,14 @@ body{
     display:block;
   }
 
-
+.msg{
+  background-image: url(../img/errr.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display:none;
+}
 
 
   /* End Global Rules */
@@ -759,9 +766,51 @@ footer .louta div:hover{
 
 
 
-
-
-
 /*end footer*/
+@media (max-width: 1150px) {
+  .show{
+    display: none;
+  }
+  .msg {
+    display:block;
+    background-image: url(../img/errr.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  }
   
+}
+.err{
+  transform: translatey(300px);
+  display: flex;
+  text-align: center;
+  color:#1877F2;
+  font-weight: bold;
+  font-size:19px;
+}
+@media (max-width: 699px) {
+ 
+  .msg {
+    display:flex;
+    align-self:center;
+    align-items: center;
+    background-image: url(../img/errr.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  }
+  
+}
+@media (min-width: 600px) {
+  .err{
+    transform: translate(100px,300px);
+  
+  }
+}
+@media (min-width: 800px) {
+  .err{
+    transform: translate(200px,300px);
+  
+  }
+}
   
